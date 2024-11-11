@@ -7,7 +7,7 @@ btn.addEventListener('click',()=>{
     const valores= parseFloat(document.getElementById("valores").value)
     
     if(isNaN(valores) ){
-        alert= ("insira um número válido")
+        alert("insira um número válido")
     }else if(valores==0){
         alert("insira u numero diferente de zero(0)")
     }else{
