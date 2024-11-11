@@ -84,3 +84,38 @@ td{
 tbody :hover{
     background-color: #bb5705d0;
 }
+
+
+@media screen and (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    /* Ajusta o input e os botões para se ajustarem melhor em telas pequenas */
+    input, button {
+        max-width: 100%;
+    }
+}
+
+/* Estilos para dispositivos móveis (telas menores que 480px) */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px; /* Reduz o tamanho da fonte */
+    }
+
+    .container {
+        width: 95%; /* Ajusta o contêiner para telas muito pequenas */
+        padding: 10px;
+    }
+
+    table th, table td {
+        font-size: 12px; /* Ajusta a fonte da tabela */
+        padding: 8px;
+    }
+
+    button {
+        font-size: 14px; /* Ajusta o tamanho da fonte do botão */
+    }
+}
