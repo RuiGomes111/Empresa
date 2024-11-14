@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // Esconde a confirmação após algum tempo
             setTimeout(function(){
                 confirmacao.classList.add('hidden');
-            }, 6000);
+            }, 4000);
 
             // Limpa o formulário
             form.reset();
