@@ -9,6 +9,10 @@
 }
 
 
+#sugest{
+    color: #f7f7f7;
+    
+}
 
 body{
     display:flex;
@@ -17,6 +21,10 @@ body{
 
 }
 
+
+.img_text a :hover{
+    transform: scale(1.3);
+}
 input{
     
 height:40px;
@@ -38,6 +46,8 @@ height:40px;
     height:600px;
     align-items:center;
     border-radius:8px;
+    flex-wrap: wrap;
+   
    
 }
 
@@ -49,7 +59,7 @@ body{
     height:40px;
     background: #bb5705d0;
     border-radius:5px;
-    width:150px;
+    width:90px;
    
 }
 
@@ -106,16 +116,29 @@ tbody :hover{
     }
 
     .container {
-        width: 95%; /* Ajusta o contêiner para telas muito pequenas */
+        width: 90%; /* Ajusta o contêiner para telas muito pequenas */
         padding: 10px;
+        margin: 50px;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        border-radius:8px;
+        flex-wrap: wrap;
+           
+        
     }
 
     table th, table td {
         font-size: 12px; /* Ajusta a fonte da tabela */
         padding: 8px;
+        width: 100%;
     }
 
     button {
         font-size: 14px; /* Ajusta o tamanho da fonte do botão */
     }
+    .containner h1{
+        font-size: 20px;
+    }
+    
 }

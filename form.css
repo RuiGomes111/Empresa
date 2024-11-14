@@ -1,0 +1,134 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: url("/13029.jpg");
+    
+}
+form #btn{
+    color: rgb(44, 132, 204);
+ }
+.containner{
+    background:transparent;
+    width:500px;
+    height:300px;
+    
+}
+
+h1{
+    color:#faf7f7;
+    text-align:center;
+}
+
+
+form .info{
+    display:flex;
+   
+    
+}
+
+.sms{
+    display:flex;
+    flex-direction:column;
+}
+form input{
+    height:30px;
+    width:300px;
+}
+
+form button{
+    height:30px;
+    border-radius:5px;
+}
+
+#confirmacao.hidden {
+    display: none;
+}
+
+/* Estilo para a mensagem de confirmação */
+#confirmacao {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+   .containner {
+    width: 50%; /* Ajusta o contêiner para telas muito pequenas */
+    padding: 10px;
+    margin: 50px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    border-radius:8px;
+    
+    }
+
+   
+    .info{
+      
+        display: block;
+        flex-wrap: wrap;
+     }
+     form {
+        width: 150px;
+     }
+     #feedback input{
+        height:30px;
+        width:100%;
+    }
+    /* Ajusta o input e os botões para se ajustarem melhor em telas pequenas */
+    input, button {
+        max-width: 50%;
+    }
+    form input{
+        height:30px;
+        width:100%;
+    }
+    form #btn{
+        color: rgb(44, 132, 204);
+     }
+}
+
+@media screen and (max-width: 768px) {
+    .containner {
+     width: 90%; /* Ajusta o contêiner para telas muito pequenas */
+     padding: 10px;
+     margin: 50px;
+     display:flex;
+     flex-direction:column;
+     align-items:center;
+     border-radius:8px;
+     
+     }
+     .containner h1{
+         font-size: 14px;
+     }
+ 
+     /* Ajusta o input e os botões para se ajustarem melhor em telas pequenas */
+     input, button {
+         max-width: 100%;
+         
+     }
+     form input{
+         height:30px;
+         width:200px;
+     }
+
+      form #btn{
+        color: rgb(44, 132, 204);
+     }
+ }
+ 

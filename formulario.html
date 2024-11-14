@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="containner">
+        <h1>Sugestões e Reclamações</h1>
+
+       <form id="feedback" target="_blank" action="https://formsubmit.co/ruisoft01@gmail.com" method="post" >
+         <div class="info">
+            <input id="nome" type="text" name="name" placeholder="insira o seu nome" required >
+            <input id="email" type="email" name="email" placeholder="insira o seu email" required >
+            
+        </div>
+        
+       <div class="sms">
+            <textarea id="message" name="message" placeholder="sua mensagem" rows="10" required ></textarea>
+        <button type="submit" id="btn">enviar</button>
+    </div>
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+
+     </form>
+                <div id="confirmacao" class="hidden">
+                    <p>Obrigado pela sua sugestão/reclamação! </p>
+                </div>
+    </div>
+
+   
+
+    <script src="form.js"></script>
+</body>
+
+
+</html>
